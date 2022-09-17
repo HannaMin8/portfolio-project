@@ -3,18 +3,10 @@
   --secondary-color: #f5f2fe;
   --main-color: #f9f7fe;
   --head-color: #272142;
+  --white-color: white;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --head-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
-}
-
-@media (max-width: 576px) {
-  p {
-    text-align: center;
-  }
-  h3 {
-    font-size: 20px;
-  }
 }
 
 body {
@@ -45,13 +37,6 @@ p {
   text-align: left;
 }
 
-.contact {
-  background: var(--secondary-color);
-  border-radius: 4px;
-  margin: 132px 0 20px 0;
-  padding: 40px 20px 40px 20px;
-}
-
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -77,12 +62,6 @@ p {
   margin: 30px 0;
 }
 
-.about-paragraphs p {
-  margin: 40px;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
 .email-link {
   display: flex;
   justify-content: center;
@@ -105,13 +84,13 @@ p {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
-  text-transform: capitalize;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--white-color);
 }
 
 /*index.html*/
+
 .about {
   background-color: var(--main-color);
   text-align: center;
@@ -131,6 +110,11 @@ p {
   font-size: 36px;
   font-weight: 700;
 }
+.project-description h2 {
+  font-size: 64px;
+  font-weight: 700;
+  font-family: var(--head-font-family);
+}
 .about h3 {
   font-size: 24px;
   font-weight: 400;
@@ -138,17 +122,112 @@ p {
 .about a {
   font-size: 18px;
   font-weight: 500;
-}
-.about a {
   font-family: var(--default-font-family);
-}
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
 }
 
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--white-color);
+}
+.btn-project-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-family: var(--default-font-family);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-talk-link {
+  color: var(--white-color);
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  font-family: var(--default-font-family);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.about-paragraphs p {
+  font-family: var(--default-font-family);
+  background: var(--white-color);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.project-description p {
+  font-family: var(--default-font-family);
+  color: var(--head-color);
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+
+.contact {
+  border-radius: 20px;
+  background-color: var(--main-color);
+  margin: 132px 0 20px 0;
+  padding: 15px 20px 15px 20px;
+}
+
+.contact h4 {
+  font-family: var(--head-font-family);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 2;
+}
+.contact h5 {
+  font-family: var(--default-font-family);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  background-color: var(--main-color);
+}
+#text {
+  padding: 40px 50px 40px 80px;
+}
+#btn {
+  padding: 70px 80px 15px 20px;
+}
+@media screen and (max-width: 900px) {
+  .about {
+    padding: 80px 20px;
+    line-height: 1.5;
+  }
+  .about h1 {
+    font-size: 44px;
+  }
+  .about h2,
+  .project-description h2 {
+    font-size: 24px;
+  }
+  .about h3 {
+    font-size: 18px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  .mail {
+    font-size: 18px;
+  }
+  .contact {
+    font-size: 14px;
+  }
 }
