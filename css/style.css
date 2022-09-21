@@ -4,6 +4,7 @@
   --main-color: #f9f7fe;
   --head-color: #272142;
   --white-color: white;
+  --black-color: #000000;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --head-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
@@ -21,17 +22,6 @@ h3 {
   text-align: center;
 }
 
-h3 {
-  opacity: 0.7;
-}
-/*
-p {
-  background: var(--secondary-color);
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: left;
-}
-*/
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -181,22 +171,29 @@ p {
   padding: 70px 80px 15px 20px;
 }
 
-/*about.html*/
+/*about.html*/ /*work.html*/
 
-.about-paragraphs h1 {
+.content-container h1 {
   font-family: var (--head-font-family);
   font-size: 64px;
   line-height: 85.31px;
   font-weight: 700;
 }
-.about-paragraphs h3 {
+.content-container h3 {
   font-family: var (--default-font-family);
-  font-size: 27px;
+  font-size: 18px;
   line-height: 27px;
   font-weight: 700;
   color: var(--head-color);
 }
-.about-paragraphs p {
+#projects {
+  font-family: var (--default-font-family);
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--black-color);
+}
+.content-container p {
   font-family: var (--default-font-family);
   font-size: 16px;
   line-height: 30px;
@@ -206,12 +203,12 @@ p {
   background-color: none;
 }
 
-.about-paragraphs {
+.content-container {
   padding: 130px 20px;
 }
 
-.about-paragraphs img {
-  border-radius: 15%;
+.content-container img {
+  border-radius: 20px;
   margin: 15px 0px 0px 20px;
 }
 .brand-shadow {
@@ -232,15 +229,21 @@ p {
   font-weight: 500;
 }
 
+.content p {
+  font-size: 14px;
+}
+
 @media screen and (max-width: 900px) {
   .about {
     padding: 80px 20px;
     line-height: 1.5;
   }
-  .about h1 {
+  .about h1,
+  .content-container h1 {
     font-size: 44px;
   }
   .about h2,
+  .contact h4,
   .project-description h2 {
     font-size: 24px;
   }
@@ -254,10 +257,13 @@ p {
   .mail {
     font-size: 18px;
   }
-  .contact {
+  .contact h4 {
+    font-size: 26px;
+  }
+  .contact h5 {
     font-size: 14px;
   }
-  .about-paragraphs {
+  .content-container {
     text-align: center;
     padding: 0;
   }
