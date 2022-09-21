@@ -21,22 +21,17 @@ h3 {
   text-align: center;
 }
 
-h1 {
-  font-size: 46px;
-}
-
 h3 {
-  font-size: 24px;
   opacity: 0.7;
 }
-
+/*
 p {
   background: var(--secondary-color);
   font-size: 18px;
   line-height: 1.5;
   text-align: left;
 }
-
+*/
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -57,11 +52,6 @@ p {
   display: block;
 }
 
-.about-paragraphs {
-  display: flex;
-  margin: 30px 0;
-}
-
 .email-link {
   display: flex;
   justify-content: center;
@@ -78,15 +68,6 @@ p {
   display: block;
   width: 500px;
   border-radius: 4px;
-}
-
-.primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: var(--white-color);
 }
 
 /*index.html*/
@@ -159,13 +140,6 @@ p {
   border-radius: 4px;
   text-decoration: none;
 }
-.about-paragraphs p {
-  font-family: var(--default-font-family);
-  background: var(--white-color);
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 400;
-}
 
 .project-description p {
   font-family: var(--default-font-family);
@@ -173,6 +147,7 @@ p {
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
+  opacity: 0.7;
 }
 
 .project-description {
@@ -205,6 +180,58 @@ p {
 #btn {
   padding: 70px 80px 15px 20px;
 }
+
+/*about.html*/
+
+.about-paragraphs h1 {
+  font-family: var (--head-font-family);
+  font-size: 64px;
+  line-height: 85.31px;
+  font-weight: 700;
+}
+.about-paragraphs h3 {
+  font-family: var (--default-font-family);
+  font-size: 27px;
+  line-height: 27px;
+  font-weight: 700;
+  color: var(--head-color);
+}
+.about-paragraphs p {
+  font-family: var (--default-font-family);
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: var(--head-color);
+  opacity: 0.7;
+  background-color: none;
+}
+
+.about-paragraphs {
+  padding: 130px 20px;
+}
+
+.about-paragraphs img {
+  border-radius: 15%;
+  margin: 15px 0px 0px 20px;
+}
+.brand-shadow {
+  box-shadow: 100px 0px 200px rgb(193, 224, 250),
+    -100px 0px 200px rgb(19, 116, 197);
+}
+
+.primary-link {
+  border-radius: 4px;
+  padding: 15px 30px;
+  text-decoration: none;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--white-color);
+  font-family: var(--default-font-family);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 900px) {
   .about {
     padding: 80px 20px;
@@ -229,5 +256,9 @@ p {
   }
   .contact {
     font-size: 14px;
+  }
+  .about-paragraphs {
+    text-align: center;
+    padding: 0;
   }
 }
