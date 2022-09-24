@@ -11,9 +11,38 @@
 }
 
 body {
-  margin: 60px auto;
+  margin: 10px auto;
   width: 100%;
   display: block;
+}
+
+.logo {
+  max-height: 70px;
+}
+nav {
+  padding: 10px 50px;
+}
+nav ul {
+  margin: 20px 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 24px;
+  margin-left: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--head-color);
+  transition: all 100ms ease-in-out;
+  font-size: 24px;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--primary-color);
 }
 
 h1,
