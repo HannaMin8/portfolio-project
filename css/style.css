@@ -195,7 +195,7 @@ h3 {
 .contact {
   border-radius: 20px;
   background-color: var(--main-color);
-  padding: 15px 20px 15px 20px;
+  padding: 15px 20px;
 }
 
 .contact h4 {
@@ -252,7 +252,7 @@ h3 {
 }
 
 .content-container {
-  padding: 130px 20px;
+  padding: 130px 12px;
 }
 
 .content-container img {
