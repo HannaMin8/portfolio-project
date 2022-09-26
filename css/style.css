@@ -97,7 +97,7 @@ h3 {
 .about {
   background-color: var(--main-color);
   text-align: center;
-  padding: 276px 20px;
+  padding: 120px 20px 80px 20px;
 }
 .about h1 {
   font-size: 96px;
@@ -274,8 +274,7 @@ h3 {
   color: var(--primary-color);
   background: var(--white-color);
   border-radius: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0 50px;
   font-size: 120px;
 }
 .links a:hover {
@@ -297,12 +296,12 @@ footer .icon a:hover {
 
 @media screen and (max-width: 900px) {
   .about {
-    padding: 80px 20px;
-    line-height: 1.5;
+    line-height: 1;
   }
   .about h1,
   .content-container h1 {
     font-size: 32px;
+    padding: 80px 20px;
   }
   .about h2,
   .contact h4,
@@ -312,6 +311,7 @@ footer .icon a:hover {
   .about h3 {
     font-size: 18px;
   }
+
   .project-description {
     padding: 0;
     text-align: center;
@@ -331,14 +331,10 @@ footer .icon a:hover {
     margin-top: 35px;
   }
   .links a {
-    font-size: 50px;
-  }
-  .col-lg-6,
-  .col-6 {
-    max-width: 300px;
+    font-size: 30px;
   }
 
-  .content h2 {
+  .content-container h2 {
     font-size: 16px;
   }
   .content {
